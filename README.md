@@ -43,7 +43,7 @@ This game is implemented primarily in a single source file (`main.cpp`) and demo
 
 - **Language:** C++
 - **Graphics/Windowing:** SFML 2.6.x
-- **IDE/Build:** Visual Studio 2022 (`DSProj.sln`, `DSProj.vcxproj`)
+- **IDE/Build:** Visual Studio 2022 (solution format version 17) (`DSProj.sln`, `DSProj.vcxproj`)
 
 ## Project Structure
 
@@ -68,11 +68,11 @@ Bloons_TD_Inspired_Game/
 ### Setup
 
 1. Open `DSProj.sln` in Visual Studio.
-2. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use (Debug/Release and x64/x86 as needed).
-   - `Project > Properties > C/C++ > General > Additional Include Directories` → add `C:/SFML-2.6.2/include`
-   - `Project > Properties > Linker > General > Additional Library Directories` → add `C:/SFML-2.6.2/lib`
+2. Note: only **x64 Debug** is preconfigured for SFML in the current project; other configurations (including x86 and Release) require manual setup.
+3. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use.
+   - `Project > Properties > C/C++ > General > Additional Include Directories` → add `C:/path/to/SFML-2.6.x/include`
+   - `Project > Properties > Linker > General > Additional Library Directories` → add `C:/path/to/SFML-2.6.x/lib`
    - `Project > Properties > Linker > Input > Additional Dependencies` → add required SFML libs (e.g., graphics/window/system/audio, debug or release variants)
-3. The current project explicitly includes SFML path settings for **x64 Debug** only; other configurations (including x86 and Release) should be configured manually.
 4. Build and run the `DSProj` target.
 
 ## Important Note About Asset Paths
