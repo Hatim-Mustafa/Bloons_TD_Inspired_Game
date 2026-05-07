@@ -69,6 +69,9 @@ Bloons_TD_Inspired_Game/
 
 1. Open `DSProj.sln` in Visual Studio.
 2. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use (Debug/Release and x64/x86 as needed).
+   - `Project > Properties > C/C++ > General > Additional Include Directories` → add `C:/SFML-2.6.2/include`
+   - `Project > Properties > Linker > General > Additional Library Directories` → add `C:/SFML-2.6.2/lib`
+   - `Project > Properties > Linker > Input > Additional Dependencies` → add required SFML libs (e.g., graphics/window/system/audio, debug or release variants)
 3. The current project explicitly includes SFML path settings for x64 Debug.
 4. Build and run the `DSProj` target.
 
