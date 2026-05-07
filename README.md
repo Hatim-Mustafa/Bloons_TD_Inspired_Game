@@ -68,14 +68,16 @@ Bloons_TD_Inspired_Game/
 ### Setup
 
 1. Open `DSProj.sln` in Visual Studio.
-2. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use (Debug/Release and x64/x86 as needed). The current project explicitly includes SFML path settings for x64 Debug.
-3. Build and run the `DSProj` target.
+2. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use (Debug/Release and x64/x86 as needed).
+3. The current project explicitly includes SFML path settings for x64 Debug.
+4. Build and run the `DSProj` target.
 
 ## Important Note About Asset Paths
 
 The current source uses several **hardcoded absolute Windows paths** (for textures/fonts), for example:
-- `C:/Users/<username>/Desktop/...`
-- `C:/Users/<username>/OneDrive/Desktop/...`
+- `C:/Users/<username>/Desktop/Bloons_TD_Inspired_Game/animatedredenemy.png`
+- `C:/Users/<username>/Desktop/Bloons_TD_Inspired_Game/tower.png`
+- `C:/Users/<username>/OneDrive/Desktop/Bloons_TD_Inspired_Game/Clash_Regular.otf`
 
 To run the game on another machine, update those paths in `main.cpp` to local paths (or convert them to relative project paths).
 
