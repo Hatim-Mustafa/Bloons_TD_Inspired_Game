@@ -68,8 +68,8 @@ Bloons_TD_Inspired_Game/
 ### Setup
 
 1. Open `DSProj.sln` in Visual Studio.
-2. Note: only **x64 Debug** is preconfigured for SFML in the current project; other configurations (including x86 and Release) require manual setup.
-3. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use.
+2. Note: only **x64 Debug** is preconfigured for SFML in the current project; other configurations (including Win32 and Release) require manual setup.
+3. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use (if not already configured).
    - `Project > Properties > C/C++ > General > Additional Include Directories` → add `C:/path/to/SFML-2.6.x/include`
    - `Project > Properties > Linker > General > Additional Library Directories` → add `C:/path/to/SFML-2.6.x/lib`
    - `Project > Properties > Linker > Input > Additional Dependencies` → add required SFML libs (e.g., graphics/window/system/audio, debug or release variants)
@@ -83,6 +83,7 @@ The current source uses several **hardcoded absolute Windows paths** (for textur
 - `C:/Users/<username>/OneDrive/Desktop/Bloons_TD_Inspired_Game/Clash_Regular.otf`
 
 These examples intentionally show both `Desktop` and `OneDrive/Desktop` variants because both patterns appear in the current code.
+This hardcoded-path setup is currently the main portability blocker for running the game on other machines.
 
 To run the game on another machine, update those paths in `main.cpp` to local paths (or convert them to relative project paths).
 
