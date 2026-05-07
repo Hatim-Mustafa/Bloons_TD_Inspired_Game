@@ -72,7 +72,7 @@ Bloons_TD_Inspired_Game/
    - `Project > Properties > C/C++ > General > Additional Include Directories` → add `C:/SFML-2.6.2/include`
    - `Project > Properties > Linker > General > Additional Library Directories` → add `C:/SFML-2.6.2/lib`
    - `Project > Properties > Linker > Input > Additional Dependencies` → add required SFML libs (e.g., graphics/window/system/audio, debug or release variants)
-3. The current project explicitly includes SFML path settings for x64 Debug.
+3. The current project explicitly includes SFML path settings for **x64 Debug** only; other configurations (including x86 and Release) should be configured manually.
 4. Build and run the `DSProj` target.
 
 ## Important Note About Asset Paths
@@ -81,6 +81,8 @@ The current source uses several **hardcoded absolute Windows paths** (for textur
 - `C:/Users/<username>/Desktop/Bloons_TD_Inspired_Game/animatedredenemy.png`
 - `C:/Users/<username>/Desktop/Bloons_TD_Inspired_Game/tower.png`
 - `C:/Users/<username>/OneDrive/Desktop/Bloons_TD_Inspired_Game/Clash_Regular.otf`
+
+These examples intentionally show both `Desktop` and `OneDrive/Desktop` variants because both patterns appear in the current code.
 
 To run the game on another machine, update those paths in `main.cpp` to local paths (or convert them to relative project paths).
 
