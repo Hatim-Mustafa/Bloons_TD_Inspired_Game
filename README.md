@@ -89,15 +89,15 @@ To run the game on another machine, update those paths in `main.cpp` to local pa
 
 ### Main Gameplay
 
-`[Insert screenshot here]`
+[Insert screenshot here]
 
 ### Tower Upgrade UI
 
-`[Insert screenshot here]`
+[Insert screenshot here]
 
 ### Win / Game Over Screen
 
-`[Insert screenshot here]`
+[Insert screenshot here]
 
 ## Future Improvements
 
