@@ -68,14 +68,14 @@ Bloons_TD_Inspired_Game/
 ### Setup
 
 1. Open `DSProj.sln` in Visual Studio.
-2. Ensure SFML include/lib paths are set in project properties (the project currently references `C:/SFML-2.6.2/...` for x64 Debug).
+2. Ensure SFML include/lib paths are set in project properties for every configuration you plan to use (Debug/Release and x64/x86 as needed). The current project explicitly includes SFML path settings for x64 Debug.
 3. Build and run the `DSProj` target.
 
 ## Important Note About Asset Paths
 
 The current source uses several **hardcoded absolute Windows paths** (for textures/fonts), for example:
-- `C:/Users/umera/Desktop/...`
-- `C:/Users/Dell/OneDrive/Desktop/...`
+- `C:/Users/<username>/Desktop/...`
+- `C:/Users/<username>/OneDrive/Desktop/...`
 
 To run the game on another machine, update those paths in `main.cpp` to local paths (or convert them to relative project paths).
 
