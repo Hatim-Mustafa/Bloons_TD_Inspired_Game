@@ -43,7 +43,7 @@ This game is implemented primarily in a single source file (`main.cpp`) and demo
 
 - **Language:** C++
 - **Graphics/Windowing:** SFML 2.6.x
-- **IDE/Build:** Visual Studio 2022 (solution format version 17) (`DSProj.sln`, `DSProj.vcxproj`)
+- **IDE/Build:** Visual Studio 2022 (`DSProj.sln`, `DSProj.vcxproj`)
 
 ## Project Structure
 
@@ -82,7 +82,7 @@ The current source uses several **hardcoded absolute Windows paths** (for textur
 - `C:/Users/<username>/Desktop/Bloons_TD_Inspired_Game/tower.png`
 - `C:/Users/<username>/OneDrive/Desktop/Bloons_TD_Inspired_Game/Clash_Regular.otf`
 
-These examples intentionally show both `Desktop` and `OneDrive/Desktop` variants because both patterns appear in the current code.
+Note that both `Desktop` and `OneDrive/Desktop` path patterns currently exist in the code.
 This hardcoded-path setup is currently the main portability blocker for running the game on other machines.
 
 To run the game on another machine, update those paths in `main.cpp` to local paths (or convert them to relative project paths).
